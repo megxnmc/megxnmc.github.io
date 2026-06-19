@@ -1,7 +1,6 @@
 html {
   background-color: white;
 }
-
 body {
   font: 1.2em / 1.5 system-ui;
   padding: 20px;
@@ -28,4 +27,13 @@ ul {
   border: 5px solid purple;
   padding: 30px;
   border-radius: 20px;
+}
+a {
+  color: green;
+}
+
+a:hover,
+a:focus {
+  color: darkgreen;
+  text-decoration: none;
 }
