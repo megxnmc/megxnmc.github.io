@@ -120,3 +120,11 @@ a:active {
   background: #6900ff;
   color: #cdfeaa;
 }
+
+/* List styling */
+ul, ol {
+  line-height: 1.2;
+}
+ul{
+  list-style-type: "➔";
+}
