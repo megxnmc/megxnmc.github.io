@@ -76,3 +76,6 @@ li {
   font-size: 1.6rem;
   line-height: 1.5;
 }
+section > h2 + p {
+  text-indent: 2rem;
+}
