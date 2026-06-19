@@ -1,9 +1,24 @@
 /* General setup */
 
+
 * {
   box-sizing: border-box;
 }
 
+
+.hepta-slab-headings {
+  font-family: "Hepta Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.source-sans-3-content {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 body {
   margin: 0 auto;
   padding: 0 20px;
@@ -32,4 +47,32 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Assignment stuff here */
+h1,
+h2 {
+  font-family: "Hepta Slab", Arial;
+  color: #2a2a2a;
+
+}
+
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+ /* text-shadow: 2px 2px 10px black; */
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p,
+li {
+  font-family: "Source Sans 3", sans-serif;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
