@@ -122,6 +122,24 @@ class EvilCircle extends Shape {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.stroke();
   }
+  // updating the ball's data
+  checkBounds() {
+    if (this.x + this.size >= width) {
+      this.velX -= this.velX; // bounce back from right edge
+    }
+
+    if (this.x - this.size <= 0) {
+      this.velX += this.velX; // bounce back from left edge
+    }
+
+    if (this.y + this.size >= height) {
+      this.velY -= this.velY; // bounce back from bottom edge
+    }
+
+    if (this.y - this.size <= 0) {
+      this.velY += this.velY; // bounce back from top edge
+    }
+  }
 }
 
 // Animating the ball
