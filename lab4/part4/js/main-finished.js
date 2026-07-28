@@ -24,16 +24,24 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-// Modeling a ball in our program
-
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
+// Create a Shape class
+class Shape {
+  constructor(x, y, velX, velY) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+  }
+}
+
+// Modeling a ball in our program
+
+class Ball extends Shape {
+  constructor(x, y, velX, velY, color, size) {
+    super(x, y, velX, velY);
     this.color = color;
     this.size = size;
+    this.exists = true; 
   }
 
   // drawing the ball
@@ -115,3 +123,4 @@ function loop() {
 }
 
 loop();
+
