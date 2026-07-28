@@ -49,7 +49,7 @@ function generateStory() {
 
   if (customName.value !== "") {
     const name = customName.value;
-    newStory = newStroy.replace("Bob", name);
+    newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
