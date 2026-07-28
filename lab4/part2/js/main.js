@@ -49,3 +49,10 @@ for (const image of images) {
     }
   });
 }
+
+// Create the updateDisplayedImage() function
+
+function updateDisplayedImage(e) {
+  displayedImage.src = e.target.src;
+  displayedImage.alt = e.target.alt;
+}
