@@ -71,12 +71,6 @@
       </select>
     </div> 
 
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
-
     Which greeting did you prefer?
     Wave
     Friendly greeting
@@ -87,19 +81,32 @@
 
     Any other feedback?
 
-    Give us your comments
+    <label for="comments">Give us your comments</label>
+    <br/>
+    <textarea id="comments" name="comments"></textarea>
+
+
 
     --
 
     Your details
 
-    Name
-    Email
-    Phone
+    <div class="separator">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+    </div>
+    <div class="separator">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+    </div>
+    <div class="separator">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
+    </div>
 
     --
-
-    Submit
+  
+    <button>Submit</button>
 
     --
   </body>
