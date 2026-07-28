@@ -1,3 +1,9 @@
+    /*
+    Name: Megan McMullin
+    File: main.js
+    Date: July 28, 2026
+    INFT 1206: Lab 4 Part 3: Objext Building practice
+    */
 // setup canvas
 
 const canvas = document.querySelector("canvas");
