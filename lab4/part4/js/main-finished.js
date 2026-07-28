@@ -140,6 +140,20 @@ class EvilCircle extends Shape {
       this.velY += this.velY; // bounce back from top edge
     }
   }
+  // adding collision detecting 
+  collisionDetect() {
+    for (const ball of balls) {
+      if (ball.exists) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.exists = false;
+        }
+      }
+    }
+  }
 }
 
 // Animating the ball
