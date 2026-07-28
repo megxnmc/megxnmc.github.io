@@ -12,6 +12,10 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+// reference to the paragraph
+const ballCountPara = document.querySelector("p");
+let count = 0; 
+
 // function to generate random number
 
 function random(min, max) {
@@ -150,6 +154,10 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          
+          // decrement when the evil circle eats a ball
+          count--;
+          ballCountPara.textContent = `Ball count: ${count}`;
         }
       }
     }
@@ -173,6 +181,9 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  // increment when a ball is added
+  count++;
+  ballCountPara.textContent = `Ball count: ${count}`;
 }
 
 // Create the evil circle once, outside the loop
