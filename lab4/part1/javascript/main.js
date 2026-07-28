@@ -1,3 +1,9 @@
+    /*
+    Name: Megan McMullin
+    File: main.js
+    Date: July 21, 2026
+    INFT 1206: Lab 4 Part 1: Silly story generator
+    -->*/
 
 // Complete variable definitions and random functions
 
