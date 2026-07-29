@@ -21,8 +21,8 @@
     if you do, we'll enter you into a prize draw where you'll have a chance
     to win prizes.
 
-    --
-
+  <form>
+    <div class="form-section">
     Facilities
 
     <fieldset>
@@ -58,8 +58,9 @@
       <input type="checkbox" id="majestic" name="majestic" />
       <label for="majestic">Majestic</label>
     </fieldset>
-    --
+    </div>
 
+    <div class="form-section">
     About your hosts
     <div class="separator">
       <label for="favorite">Who's your favorite bear?</label>
@@ -71,24 +72,26 @@
       </select>
     </div> 
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+      <div class="separator">
+      <label for="greeting">Which greeting did you prefer?</label>
+      <select name="greeting" id="greeting">
+        <option value="wave">Wave</option>
+        <option value="friendly">Friendly greeting</option>
+        <option value="growl">Growl</option>
+        <option value="claw">Claw marks in the door</option>
+      </select>
+    </div> 
+    </div>
 
-    --
-
+    <div class="form-section">
     Any other feedback?
 
     <label for="comments">Give us your comments</label>
     <br/>
     <textarea id="comments" name="comments"></textarea>
+    </div>
 
-
-
-    --
-
+    <div class="form-section">
     Your details
 
     <div class="separator">
@@ -103,11 +106,11 @@
       <label for="phone">Phone</label>
       <input type="tel" id="phone" name="phone" />
     </div>
-
-    --
-  
+    </div>
+    
+    <div class="form-section">
     <button>Submit</button>
-
-    --
+    </div>
+  </form>
   </body>
 </html>
