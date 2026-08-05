@@ -1,3 +1,10 @@
+/*
+Name: Megan McMullin
+File: main.js
+Date: August 5, 2026
+INFT 1206: Lab 5 Part 1: Accessibility troubleshooting
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
