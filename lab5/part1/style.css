@@ -27,19 +27,33 @@ body {
 
 h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
+}
+ 
+/* h2 and h3 get their own explicit color; h1 is left out so it
+   inherits white from its <header> parent instead of overriding it */
+h2, h3 {
   color: #2a2a2a;
 }
-
+ 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
-
-h1 {
+ 
+/* Styling the site banner via the header landmark rather than the
+   h1 element, so the CSS ties to the semantic header change */
+header {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
+}
+ 
+/* h1 just takes whatever header has, instead of maintaining
+   separate rules for font-size/margin/color individually */
+header h1 {
+  font-size: inherit;
+  margin: 0;
 }
 
 h2 {
