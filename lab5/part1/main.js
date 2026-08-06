@@ -52,3 +52,20 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+// Control transcript display
+
+const transcript = document.querySelector('.transcript');
+const transcriptBtn = document.querySelector('.transcript-container button');
+
+// Adding a transcript button that uses maxHeight to show/hide
+// the transcript text
+transcriptBtn.onclick = function() {
+  if(transcriptBtn.textContent === 'Show transcript') {
+    transcript.style.maxHeight = '500px';
+    transcriptBtn.textContent = 'Hide transcript';
+  } else {
+    transcript.style.maxHeight = '0';
+    transcriptBtn.textContent = 'Show transcript';
+  }
+};

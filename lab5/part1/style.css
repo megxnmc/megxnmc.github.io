@@ -184,6 +184,20 @@ audio {
   width: 500px;
 }
 
+/* Adds spacing above the transcript button so it doesn't sit 
+overlapping the audio player above it*/
+.transcript-container {
+  margin-top: 15px;
+}
+
+/* Collapsible transcript box that uses max-height and 
+overflow: hidden to show/hide the transcript text*/
+.transcript {
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
 /* Comments styling */
 
 .comments {
