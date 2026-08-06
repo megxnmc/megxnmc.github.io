@@ -169,12 +169,27 @@ table {
   border-collapse: collapse;
 }
 
+/* Adding a caption so screen reader users get a summary of what
+   the table shows before they navigate into it */
+caption {
+  font-weight: bold;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
 th, td {
   padding: 10px;
 }
 
-td {
+td, th[scope="row"] {
   text-align: center;
+}
+
+/* Adding a background color to the table headings. #2a2a2a with
+   white text tests to roughly 13.6:1 contrast, well above WCAG AA */
+th {
+  background-color: rgb(108, 108, 129);
+  color: white;
 }
 
 th[scope="col"] {
