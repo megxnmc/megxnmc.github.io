@@ -56,6 +56,18 @@ p, li, table {
   line-height: 1.5;
 }
 
+/* Adding a class that hides the search label visually while
+keeping it readable to screen readers, instead of display: none
+which would hide it from screen readers too */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 /* || header layout */
 
 /*
