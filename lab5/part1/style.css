@@ -217,8 +217,11 @@ overflow: hidden to show/hide the transcript text*/
   padding: 10px;
 }
 
+/* Adding font-family: inherit since the show-hide control is now a
+   real <button>, and buttons don't inherit the page font by default */
 .show-hide {
   cursor: pointer;
+  font-family: inherit;
 }
 
 .comments h2 {
