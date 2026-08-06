@@ -58,9 +58,16 @@ p, li, table {
 
 /* || header layout */
 
+/*
+The original background color was green (#008000) which tested
+to 2.79:1, which fails WCAG AA (needing a 4.5:1 for normal-size 
+text). Changing the background color to white (#ffffff) solved the 
+contrast failure tested to 14.35:1. 
+*/
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
+
 
 article, footer, .secondary {
   padding: 10px 30px;
@@ -72,7 +79,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ffffff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
